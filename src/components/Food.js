@@ -42,10 +42,10 @@ const Food = () => {
                 <div>
                     <p className='font-bold text-gray-700'>Filtra por precio</p>
                     <div className='flex justify-between flex-wrap max-w-[390px] w-full'>
-                        <button onClick={() => filterPrice('$')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>$</button>
-                        <button onClick={() => filterPrice('$$')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>$$</button>
-                        <button onClick={() => filterPrice('$$$')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>$$$</button>
-                        <button onClick={() => filterPrice('$$$$')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>$$$$</button>
+                        <button onClick={() => filterPrice('S/. 1')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 1' }}></button>
+                        <button onClick={() => filterPrice('S/. 5')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 5' }}></button>
+                        <button onClick={() => filterPrice('S/. 10')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 10' }}></button>
+                        <button onClick={() => filterPrice('S/. 20')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 20' }}></button>
                     </div>
                 </div>
             </div>

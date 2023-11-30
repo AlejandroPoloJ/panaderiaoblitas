@@ -15,7 +15,7 @@ const Navbar = () => {
                     <FiSearch size={5} className="bg-orange-500 text-white p-[10px] h-10 rounded-md w-10 font-bold " />
                 </div>
                 <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 ml-5 rounded inline-flex items-center"
-                onClick={() => window.open('https://wa.me/+51954965608?text=Hola%20quiero%20comprar%20esto', '_blank')}>      
+                onClick={() => window.open('https://wa.me/+51941939547?text=Hola%20panadería%20Oblitas%20quiero%20hacer%20un%20pedido.', '_blank')}>      
                     <FaWhatsapp size={20} className="mr-2" />
                     <span>Whatsapp</span>
                 </button>
