@@ -11,8 +11,8 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
-      <Card />
       <Food />
+      <Card />
       <Category />
     </>
   )

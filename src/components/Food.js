@@ -22,13 +22,13 @@ const Food = () => {
 
     return (
         <div className='max-w-[1240px] m-auto px-4 py-12'>
-            <h1 className='text-orange-600 font-bold text-4xl text-center py-6'>
+            <h1 className='text-orange-600 font-bold text-4xl text-center py-2'>
                 ¡ Nuestros productos Top !
             </h1>
             <div className='flex flex-col lg:flex-row justify-between'>
                 {/* Filter Type */}
                 <div>
-                    <p className='font-bold text-gray-700'>Filtra por tipo</p>
+                    <p className='font-bold text-gray-800 mt-3 mb-3'>Filtra por tipo</p>
                     <div className='flex justify-between flex-wrap'>
                         <button onClick={() => setFoods(data)} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Todas</button>
                         <button onClick={() => filterType('panes')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Panes</button>
@@ -41,7 +41,7 @@ const Food = () => {
 
                 {/* Filter Price */}
                 <div>
-                    <p className='font-bold text-gray-700'>Filtra por precio</p>
+                    <p className='font-bold text-gray-800 mt-3 mb-3'>Filtra por precio</p>
                     <div className='flex justify-between flex-wrap max-w-[390px] w-full'>
                         <button onClick={() => filterPrice('1')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 3' }}></button>
                         <button onClick={() => filterPrice('5')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 5' }}></button>
@@ -54,7 +54,7 @@ const Food = () => {
             {/* diplay food */}
             <AnimatePresence>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
-                    {foods.map((item, index) => (
+                    {foods.map((item) => (
                         <motion.div
                             layout
                             initial={{ opacity: 0 }}

@@ -3,9 +3,11 @@ import BotonCompra from './BotonCompra.js';
 
 const Card = () => {
 
-    const TipoCombo = ["Combo del Día","Combo Ejecutivo","Combo Espcial"];
+    const TipoCombo = ["Combo del Día","Combo Ejecutivo","Combo Especial"];
 
     return (
+        <>
+        <h1 className='text-orange-600 font-bold text-4xl text-center py-2'>¡ Combos !</h1>
         <div className='max-w-[1240px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6'>
             <div className='rounded-xl relative hover:scale-105 duration-500 cursor-pointer'>
                 <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
@@ -32,6 +34,7 @@ const Card = () => {
                 <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src="https://images.unsplash.com/photo-1615585601987-296cdc0f9334?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Combo Especial" />
             </div>
         </div>
+        </>      
     )
 }
 

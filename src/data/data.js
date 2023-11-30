@@ -66,7 +66,7 @@ export const data = [
   },
   {
     id: 9,
-    name: 'Italiano Caracol',
+    name: 'Italiano',
     category: 'panes',
     image:
       'https://images.pexels.com/photos/965741/pexels-photo-965741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
