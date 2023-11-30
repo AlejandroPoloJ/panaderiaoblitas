@@ -15,7 +15,7 @@ const Food = () => {
     const filterPrice = (price) => {
         setFoods(
             data.filter((item) => {
-                return item.price === price;
+                return item.price <= price;
             })
         )
     }
@@ -35,6 +35,7 @@ const Food = () => {
                         <button onClick={() => filterType('dulces')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Dulces</button>
                         <button onClick={() => filterType('embutidos')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Embutidos</button>
                         <button onClick={() => filterType('panetones')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Panetones</button>
+                        <button onClick={() => filterType('bizcochos')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1'>Bizcochos</button>
                     </div>
                 </div>
 
@@ -42,10 +43,10 @@ const Food = () => {
                 <div>
                     <p className='font-bold text-gray-700'>Filtra por precio</p>
                     <div className='flex justify-between flex-wrap max-w-[390px] w-full'>
-                        <button onClick={() => filterPrice('S/. 1')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 1' }}></button>
-                        <button onClick={() => filterPrice('S/. 5')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 5' }}></button>
-                        <button onClick={() => filterPrice('S/. 10')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 10' }}></button>
-                        <button onClick={() => filterPrice('S/. 20')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 20' }}></button>
+                        <button onClick={() => filterPrice('1')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 3' }}></button>
+                        <button onClick={() => filterPrice('5')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 5' }}></button>
+                        <button onClick={() => filterPrice('10')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 10' }}></button>
+                        <button onClick={() => filterPrice('25')} className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white border rounded-xl px-5 py-1' dangerouslySetInnerHTML={{ __html: '&lt; S/. 25' }}></button>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ const Food = () => {
                             <div className='flex justify-between px-2 py-4'>
                                 <p>{item.name}</p>
                                 <p>
-                                    <span className='bg-orange-500 text-white p-1 rounded-md'>{item.price}</span>
+                                    <span className='bg-orange-500 text-white p-1 rounded-md'>S/. {item.price}</span>
                                 </p>
                             </div>
                         </motion.div>
