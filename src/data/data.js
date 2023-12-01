@@ -37,7 +37,7 @@ export const data = [
     category: 'embutidos',
     image:
       'https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    price: 8,
+    price: 15,
   },
   {
     id: 6,
@@ -96,6 +96,14 @@ export const data = [
     image:
       'https://erick.com.ec/wp-content/uploads/2021/10/3187.jpg',
     price: 2,
+  },
+  {
+    id: 13,
+    name: 'Salchica',
+    category: 'embutidos',
+    image:
+      'https://razzeto.com.pe/wp-content/uploads/2020/05/Salchicha-Huacchana.jpg',
+    price: 4,
   }
 ];
 

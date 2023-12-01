@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiSearch } from 'react-icons/fi';
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
